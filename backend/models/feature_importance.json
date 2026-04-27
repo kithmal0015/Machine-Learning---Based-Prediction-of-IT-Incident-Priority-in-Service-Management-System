@@ -1,0 +1,26 @@
+{
+  "Random Forest": {
+    "impact": 0.456975,
+    "urgency": 0.430484,
+    "category": 0.027814,
+    "subcategory": 0.016746,
+    "contact_type": 0.001176,
+    "incident_state": 0.0,
+    "assignment_group": 0.021429,
+    "reassignment_count": 0.006811,
+    "reopen_count": 0.000188,
+    "sys_mod_count": 0.038377
+  },
+  "XGBoost": {
+    "impact": 0.617523,
+    "urgency": 0.381499,
+    "category": 0.000222,
+    "subcategory": 0.000235,
+    "contact_type": 0.0,
+    "incident_state": 0.0,
+    "assignment_group": 0.000159,
+    "reassignment_count": 0.000187,
+    "reopen_count": 0.0,
+    "sys_mod_count": 0.000177
+  }
+}
