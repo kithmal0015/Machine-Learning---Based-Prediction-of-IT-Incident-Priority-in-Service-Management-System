@@ -1,4 +1,4 @@
-# 🛡️ IncidentIQ - IT Incident Priority Predictor
+IT Incident Priority Predictor
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-00a393.svg)
@@ -11,7 +11,7 @@ By analyzing incident features such as *Impact*, *Urgency*, and *Category*, the 
 
 ---
 
-## ✨ Features
+## Features
 - **Real-time Predictions:** Instantly predicts incident priority using a clean, modern React UI.
 - **Multiple ML Models:** Compares predictions across 3 different algorithms:
   - **Logistic Regression** (Baseline)
@@ -23,14 +23,14 @@ By analyzing incident features such as *Impact*, *Urgency*, and *Category*, the 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Frontend:** React.js, Vite, CSS (Modern Light Theme), Recharts, Axios
 - **Backend:** Python, FastAPI, Uvicorn
 - **Machine Learning:** Scikit-learn, XGBoost, Pandas, Joblib
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 To run this project on your local machine, you need to start both the Python backend and the React frontend.
 
@@ -60,7 +60,7 @@ npm run dev
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 ML-Project/
@@ -84,6 +84,6 @@ ML-Project/
 
 ---
 
-## 👨‍💻 Developed By
+## Developed By
 **Group 07**  
 General Sir John Kotelawala Defence University (KDU)
