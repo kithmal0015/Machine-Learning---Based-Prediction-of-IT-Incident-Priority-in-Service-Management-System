@@ -141,7 +141,7 @@ def main():
     with open(os.path.join(MODELS_DIR, "unique_values.json"), "w") as f:
         json.dump(unique_vals, f, indent=2)
 
-    print("\n✅  Training complete! All artifacts saved to backend/models/")
+    print("\n[OK] Training complete! All artifacts saved to backend/models/")
     print("=" * 60)
 
 

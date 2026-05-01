@@ -6,8 +6,16 @@ const MODELS = [
   { id: 'XGBoost',             desc: 'Gradient boosting' },
 ];
 
-const URGENCY_OPTS  = ['1 - High', '2 - Medium', '3 - Low'];
-const IMPACT_OPTS   = ['1 - High', '2 - Medium', '3 - Low'];
+const URGENCY_OPTS  = [
+  { value: '1 - High', label: 'Completely Blocked' },
+  { value: '2 - Medium', label: 'Partially Blocked' },
+  { value: '3 - Low', label: 'Not Blocked' }
+];
+const IMPACT_OPTS   = [
+  { value: '1 - High', label: 'Entire Business' },
+  { value: '2 - Medium', label: 'Department or Group' },
+  { value: '3 - Low', label: 'Single User or Device' }
+];
 const STATE_OPTS    = ['New', 'Active', 'Awaiting User Info', 'Awaiting Problem',
                        'Awaiting Vendor', 'Resolved', 'Closed'];
 const CONTACT_OPTS  = ['Phone', 'Email', 'Self service', 'IVR', 'Walk In'];
@@ -66,15 +74,15 @@ export default function PredictionForm({ onResult, uniqueValues, loading }) {
           <label className="form-label">Impact *</label>
           <select className="form-control" value={form.impact}
             onChange={e => set('impact', e.target.value)} required>
-            {IMPACT_OPTS.map(o => <option key={o}>{o}</option>)}
+            {IMPACT_OPTS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
           </select>
         </div>
 
         <div className="form-group">
-          <label className="form-label">Urgency *</label>
+          <label className="form-label">Work Status *</label>
           <select className="form-control" value={form.urgency}
             onChange={e => set('urgency', e.target.value)} required>
-            {URGENCY_OPTS.map(o => <option key={o}>{o}</option>)}
+            {URGENCY_OPTS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
           </select>
         </div>
 
